@@ -387,6 +387,24 @@ a.ap-button:hover { background: #eee; }
 
 .ap-comments h3 { border: none; }
 
+.ap-search h1 { font: 24px "PT Serif", serif; color: #333; text-align: center; }
+.ap-subsearch { overflow: hidden; text-align: center; padding: 0 0 10px 0; border-bottom: 1px solid #e6e6e6; margin: 0 -20px; }
+.ap-subsearch li { display: inline-block; font: 14px "PT Serif", serif; padding: 0 8px; text-transform: uppercase; }
+.ap-subsearch a { display: block; color: #333; text-decoration: none; }
+.ap-subsearch li.ap-active a { border-bottom: 1px solid #f39; }
+.ap-subsearch li.ap-nothing a { color: #ccc; }
+.ap-subsearch a:hover { color: #f39; }
+.ap-subsearch li.ap-nothing a:hover { color: #ccc; }
+
+.ap-search .ap-items { padding: 10px 0; }
+.ap-search .ap-item { overflow: hidden; border-bottom: 1px solid #e6e6e6; margin: 0 30px; padding: 10px 40px; }
+.ap-search .ap-item:last-child { border-bottom: none; }
+.ap-search .ap-item a.ap-photo { display: block; float: left; width: 60px; height: 60px; background: url(i/event60.png) no-repeat; text-decoration: none; }
+.ap-search .ap-item a.ap-photo:hover:before { content: ""; background: #f39; display: block; width: 60px; height: 60px; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)"; filter: alpha(opacity=25); -moz-opacity: 0.25; -khtml-opacity: 0.25; opacity: 0.25; }
+.ap-search .ap-item .ap-info { float: right; width: 730px; font: 10px "PT Sans", sans-serif; color: #666; padding: 2px 0 0 0; }
+.ap-search .ap-item .ap-title { font: 18px "PT Serif", serif; color: #333; text-decoration: none; display: inline-block; padding: 5px 0 0 0; }
+.ap-search .ap-item .ap-title:hover { color: #f39; }
+
 .mr20 { margin-right: 20px; }
 .mb20 { margin-bottom: 20px; }
 .mr10 { margin-right: 7px; }
