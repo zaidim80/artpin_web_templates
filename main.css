@@ -318,6 +318,7 @@ a.ap-button:hover { background: #eee; }
 .ap-msg { overflow: hidden; }
 .ap-msg a.ap-photo { height: 50px; width: 50px; display: block; background: #eee; float: left; margin: 10px 0; text-decoration: none; }
 .ap-msg a.ap-title { height: 50px; width: 140px; display: block; float: right; margin: 10px 20px 0 0; text-decoration: none; color: #333; font: 12px "PT Sans", sans-serif; }
+.ap-msg a.ap-title:hover { color: #f39; }
 
 .ap-tag-selector { text-decoration: none; text-align: center; font: 12px/18px "PT Sans", sans-serif; color: #333; padding: 10px 0 20px 0; border-bottom: 1px solid #666; margin: 0 0 10px 0; }
 .ap-tag-selector a.ap-tag { display: inline-block; border-radius: 5px; background: #ffffde; color: #888886; border: 1px solid #f6f6ec; font: 10px/12px "PT Sans", sans-serif; padding: 0 12px; text-decoration: none; margin: 0 10px 0 10px; }
@@ -361,6 +362,30 @@ a.ap-button:hover { background: #eee; }
 .ap-author-publications .ap-publication .ap-tags { float: right; width: 140px; clear: none; border: none; padding: 10px 20px 0 0; margin: 0; text-align: right; }
 .ap-author-publications .ap-publication .ap-tags a { display: block; float: right; clear: both; }
 
+.ap-event { overflow: hidden; }
+.ap-event .ap-left { display: block; float: left; width: 220px; }
+.ap-event .ap-left .ap-photo { display: block; width: 220px; height: 300px; background: url(i/event220x300.png) no-repeat; text-decoration: none; }
+.ap-event .ap-left .ap-tags { width: 220px; padding: 10px 0 20px 0; text-align: left; }
+.ap-event .ap-left .ap-author { display: block; padding: 0 0 10px 0; font: 12px "PT Sans", sans-serif; color: #b3b3b3; }
+.ap-event .ap-left .ap-author a { text-decoration: none; color: #b3b3b3; }
+.ap-event .ap-left .ap-author a:hover { text-decoration: none; color: #3cf; }
+.ap-event .ap-right { display: block; float: right; width: 700px; }
+.ap-event .ap-right .ap-title { font: 36px "PT Serif", serif; color: #333; }
+.ap-event .ap-right .ap-title span { display: inline-block; height: 16px; }
+.ap-event .ap-right .ap-title a { background: #fff; font: bold 12px/12px "PT Sans", sans-serif; padding: 0 3px; color: #999; border: 1px solid #dadada; border-radius: 7px; display: block; text-decoration: none; float: right; }
+.ap-event .ap-right .ap-title a:hover { color: #666; border-color: #999; }
+.ap-event .ap-right .ap-date-time { height: 24px; display: block; text-decoration: none; color: #333; font: 21px "PT Sans", sans-serif; background: 0 9px url(i/ico-event-time.png) no-repeat; padding: 10px 0 0 30px; }
+.ap-event .ap-right .ap-place { height: 24px; display: block; text-decoration: none; color: #333; font: italic 21px "PT Sans", sans-serif; background: 0 8px url(i/ico-event-place.png) no-repeat; padding: 10px 0 0 30px; }
+.ap-event .ap-right .ap-place:hover { font-weight: bold; }
+.ap-event .ap-right .ap-socialbar { padding: 10px 0 20px 0; }
+.ap-event .ap-right .ap-description { font: 14px "PT Sans", sans-serif; color: #666; padding: 0 0 10px 0; }
+
+.ap-wide { overflow: hidden; }
+.ap-wide .ap-msg { overflow: hidden; display: block; float: left; }
+.ap-wide .ap-msg a.ap-photo { margin: 10px 7px 10px 0; }
+.ap-wide .ap-msg a.ap-title { width: 150px; }
+
+.ap-comments h3 { border: none; }
 
 .mr20 { margin-right: 20px; }
 .mb20 { margin-bottom: 20px; }
