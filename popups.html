@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>artpin</title>  
+<link href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif+Caption|PT+Serif|PT+Sans+Caption&subset=latin,cyrillic" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="main.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/lightbox_me.js" charset="UTF-8"></script>
+<script src="js/common.js" type="text/javascript" type="text/javascript" charset="UTF-8"></script>
+</head>
+<body>
+<div class="ap-body">
+	<div class="ap-banner ap-leftbanner">top left banner</div>
+	<div class="ap-banner ap-rightbanner">top right banner</div>
+	<div class="ap-banner ap-widebanner">top wide banner</div>
+	<div class="ap-maincol">
+		<div class="ap-block ap-simple-white ap-search">
+			<h1>Всплывающие формы</h1>
+			<ul>
+				<li><a href="#" onclick="popupPage('places');">Список заведений</a></li>
+				<li><a href="#" onclick="popupPage('authors');">Список авторов</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="ap-rightcol">
+		<div class="ap-block ap-simple-white">
+			<h3>Популярное</h3>
+			<div class="ap-popular-list">
+				<div class="ap-msg">
+					<a href="#" class="ap-photo">&nbsp;</a>
+					<a href="#" class="ap-title">Что смотреть летом: Российские дизайнеры о любимых фильмах</a>
+				</div>
+				<div class="ap-msg">
+					<a href="#" class="ap-photo">&nbsp;</a>
+					<a href="#" class="ap-title">Что смотреть летом: Российские дизайнеры о любимых фильмах</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ap-banner ap-widebanner ap-bottomwidebanner">bottom wide banner</div>
+</div>
+<div class="ap-footer">
+	<ul class="ap-menu">
+		<li><a href="#">Главная</a></li>
+		<li><a href="#">Публикации</a></li>
+		<li><a href="#">Календарь</a></li>
+		<li><a href="#">Интервью</a></li>
+	</ul>
+	<p><a href="#">Пользовательское соглашение</a></p>
+	<img src="i/footline.png" alt="" width="240" height="3" />
+	<p><a href="#">Реклама на сайте</a></p>
+	<p class="ap-copyright"><a href="#">Артбыт</a></p>
+</div>
+<div id="ap-hidden-places" style="display:none">
+	<div class="ap-places-popup">
+		<form class="ap-mini-search-form"><input type="text" name="search" value="" class="ap-search-field" /></form>
+		<ul class="ap-place-selector">
+			<li class="ap-active"><a href="#">все</a></li>
+			<li><a href="#">музеи</a></li>
+			<li><a href="#">театры</a></li>
+			<li><a href="#">кинотеатры</a></li>
+			<li><a href="#">кафе</a></li>
+			<li><a href="#">бары</a></li>
+			<li><a href="#">рестораны</a></li>
+			<li><a href="#">клубы</a></li>
+			<li><a href="#">парки</a></li>
+		</ul>
+		<div class="ap-places">
+			<div class="ap-column">
+				<a class="ap-item" href="#"><span></span>Центр традиционной народной культуры Среднего Урала</a>
+				<a class="ap-item" href="#"><span></span>Библиотека им. В. Г. Белинского</a>
+				<a class="ap-item" href="#"><span></span>Цирк</a>
+				<a class="ap-item" href="#"><span></span>Центр документации общественных организаций</a>
+				<a class="ap-item" href="#"><span></span>Центр традиционной народной культуры Среднего Урала</a>
+				<a class="ap-item" href="#"><span></span>Библиотека им. В. Г. Белинского</a>
+				<a class="ap-item" href="#"><span></span>Цирк</a>
+				<a class="ap-item" href="#"><span></span>Центр документации общественных организаций</a>
+				<a class="ap-item" href="#"><span></span>Центр традиционной народной культуры Среднего Урала</a>
+				<a class="ap-item" href="#"><span></span>Библиотека им. В. Г. Белинского</a>
+				<a class="ap-item" href="#"><span></span>Цирк</a>
+				<a class="ap-item" href="#"><span></span>Центр документации общественных организаций</a>
+			</div>
+			<div class="ap-column">
+				<a class="ap-item" href="#"><span></span>Центр традиционной народной культуры Среднего Урала</a>
+				<a class="ap-item" href="#"><span></span>Библиотека им. В. Г. Белинского</a>
+				<a class="ap-item" href="#"><span></span>Цирк</a>
+				<a class="ap-item" href="#"><span></span>Центр документации общественных организаций</a>
+				<a class="ap-item" href="#"><span></span>Центр традиционной народной культуры Среднего Урала</a>
+				<a class="ap-item" href="#"><span></span>Библиотека им. В. Г. Белинского</a>
+				<a class="ap-item" href="#"><span></span>Цирк</a>
+				<a class="ap-item" href="#"><span></span>Центр документации общественных организаций</a>
+				<a class="ap-item" href="#"><span></span>Центр традиционной народной культуры Среднего Урала</a>
+				<a class="ap-item" href="#"><span></span>Библиотека им. В. Г. Белинского</a>
+				<a class="ap-item" href="#"><span></span>Цирк</a>
+				<a class="ap-item" href="#"><span></span>Центр документации общественных организаций</a>
+			</div>
+			<div class="ap-column">
+				<a class="ap-item" href="#"><span></span>Центр традиционной народной культуры Среднего Урала</a>
+				<a class="ap-item" href="#"><span></span>Библиотека им. В. Г. Белинского</a>
+				<a class="ap-item" href="#"><span></span>Цирк</a>
+				<a class="ap-item" href="#"><span></span>Центр документации общественных организаций</a>
+				<a class="ap-item" href="#"><span></span>Центр традиционной народной культуры Среднего Урала</a>
+				<a class="ap-item" href="#"><span></span>Библиотека им. В. Г. Белинского</a>
+				<a class="ap-item" href="#"><span></span>Цирк</a>
+				<a class="ap-item" href="#"><span></span>Центр документации общественных организаций</a>
+				<a class="ap-item" href="#"><span></span>Центр традиционной народной культуры Среднего Урала</a>
+				<a class="ap-item" href="#"><span></span>Библиотека им. В. Г. Белинского</a>
+				<a class="ap-item" href="#"><span></span>Цирк</a>
+				<a class="ap-item" href="#"><span></span>Центр документации общественных организаций</a>
+			</div>
+			<div class="ap-column">
+				<a class="ap-item" href="#"><span></span>Центр традиционной народной культуры Среднего Урала</a>
+				<a class="ap-item" href="#"><span></span>Библиотека им. В. Г. Белинского</a>
+				<a class="ap-item" href="#"><span></span>Цирк</a>
+				<a class="ap-item" href="#"><span></span>Центр документации общественных организаций</a>
+				<a class="ap-item" href="#"><span></span>Центр традиционной народной культуры Среднего Урала</a>
+				<a class="ap-item" href="#"><span></span>Библиотека им. В. Г. Белинского</a>
+				<a class="ap-item" href="#"><span></span>Цирк</a>
+				<a class="ap-item" href="#"><span></span>Центр документации общественных организаций</a>
+				<a class="ap-item" href="#"><span></span>Центр традиционной народной культуры Среднего Урала</a>
+				<a class="ap-item" href="#"><span></span>Библиотека им. В. Г. Белинского</a>
+				<a class="ap-item" href="#"><span></span>Цирк</a>
+				<a class="ap-item" href="#"><span></span>Центр документации общественных организаций</a>
+			</div>
+		</div>
+		<ul class="ap-pagination">
+			<li><a href="#">&lt;</a></li>
+			<li class="ap-active"><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#">6</a></li>
+			<li><a href="#">7</a></li>
+			<li><a href="#">8</a></li>
+			<li><a href="#">9</a></li>
+			<li><a href="#">10</a></li>
+			<li><a href="#">11</a></li>
+			<li><a href="#">12</a></li>
+			<li><a href="#">&gt;</a></li>
+		</ul>
+	</div>
+</div>
+<div id="ap-hidden-authors" style="display:none">
+	<div class="ap-authors-popup">
+		<form class="ap-mini-search-form"><input type="text" name="search" value="" class="ap-search-field" /></form>
+		<div class="ap-authors">
+			<div class="ap-column">
+				<a class="ap-item" href="#"><span style="background-image:url(i/catalog/aleksandr-makedonskiy-60.jpg)"></span>Александр Днепропетровский</a>
+				<a class="ap-item" href="#"><span style="background-image:url(i/catalog/aleksandr-makedonskiy-60.jpg)"></span>Александр Днепропетровский</a>
+				<a class="ap-item" href="#"><span style="background-image:url(i/catalog/aleksandr-makedonskiy-60.jpg)"></span>Александр Днепропетровский</a>
+				<a class="ap-item" href="#"><span style="background-image:url(i/catalog/aleksandr-makedonskiy-60.jpg)"></span>Александр Днепропетровский</a>
+				<a class="ap-item" href="#"><span style="background-image:url(i/catalog/aleksandr-makedonskiy-60.jpg)"></span>Александр Днепропетровский</a>
+				<a class="ap-item" href="#"><span style="background-image:url(i/catalog/aleksandr-makedonskiy-60.jpg)"></span>Александр Днепропетровский</a>
+			</div>
+			<div class="ap-column">
+				<a class="ap-item" href="#"><span style="background-image:url(i/catalog/aleksandr-makedonskiy-60.jpg)"></span>Александр Днепропетровский</a>
+				<a class="ap-item" href="#"><span style="background-image:url(i/catalog/aleksandr-makedonskiy-60.jpg)"></span>Александр Днепропетровский</a>
+				<a class="ap-item" href="#"><span style="background-image:url(i/catalog/aleksandr-makedonskiy-60.jpg)"></span>Александр Днепропетровский</a>
+				<a class="ap-item" href="#"><span style="background-image:url(i/catalog/aleksandr-makedonskiy-60.jpg)"></span>Александр Днепропетровский</a>
+				<a class="ap-item" href="#"><span style="background-image:url(i/catalog/aleksandr-makedonskiy-60.jpg)"></span>Александр Днепропетровский</a>
+				<a class="ap-item" href="#"><span style="background-image:url(i/catalog/aleksandr-makedonskiy-60.jpg)"></span>Александр Днепропетровский</a>
+			</div>
+		</div>
+		<ul class="ap-pagination">
+			<li><a href="#">&lt;</a></li>
+			<li class="ap-active"><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#">6</a></li>
+			<li><a href="#">7</a></li>
+			<li><a href="#">8</a></li>
+			<li><a href="#">9</a></li>
+			<li><a href="#">10</a></li>
+			<li><a href="#">11</a></li>
+			<li><a href="#">12</a></li>
+			<li><a href="#">&gt;</a></li>
+		</ul>
+	</div>
+</div>
+</body>
