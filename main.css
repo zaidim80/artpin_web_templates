@@ -248,8 +248,11 @@ a.ap-button:hover { background: #eee; }
 .ap-super-hint .ap-hint-button { float: right; margin: -5px -8px 0 8px; display: block; width: 12px; color: #000; text-decoration: none; text-align: center; font: 12px sans-serif; color: #996; }
 .ap-super-hint .ap-hint-button:hover { color: #000; }
 
-.ap-date-line { height: 55px; border-bottom: 1px solid #e6e6e6; margin: 0 -20px; padding: 0 20px; }
-.ap-events-list+.ap-date-line { border-top: 1px solid #e6e6e6; padding: 5px 0 0 20px; margin: 20px -20px 0 -20px; }
+.ap-date-line { height: 50px; border-bottom: 1px solid #e6e6e6; margin: 0 -20px; padding: 0 20px; border-top: 1px solid #e6e6e6; }
+.ap-date-line-placer { height: 50px; clear: both; padding-top: 20px; }
+.ap-date-line-placer:first-child { height: 50px; padding-top: 0; }
+.ap-date-line-placer:first-child .ap-date-line { border-top: none; }
+/*.ap-events-list+.ap-date-line { border-top: 1px solid #e6e6e6; padding: 5px 0 0 20px; margin: 20px -20px 0 -20px; }*/
 .ap-date-line .ap-day { color: #000; font: 50px/50px "PT Serif", serif; display: block; height: 48px; text-decoration: none; letter-spacing: -4px; float: left; margin: 0 12px 0 0; }
 .ap-date-line .ap-day:hover { border-bottom: 1px dotted #000; }
 .ap-date-line .ap-day:hover { color: #666; border-color: #999; }
@@ -442,6 +445,8 @@ a.ap-button:hover { background: #eee; }
 
 .ap-authors-popup .ap-column a { display: block; margin: 0 4px; height: 70px; color: #333; font: 18px "PT Serif", serif; padding: 5px 10px 0 65px; text-decoration: none; }
 .ap-authors-popup .ap-column a span { display: block; width: 60px; height: 60px; float: left; margin: -3px 0 0 -65px; }
+
+.ap-fixed-date { position: fixed; top: 0; z-index: 100; background: #fff; width: 942px; }
 
 
 .mr20 { margin-right: 20px; }

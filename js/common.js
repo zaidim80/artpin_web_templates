@@ -1,3 +1,5 @@
+var last_fixed_line = -1;
+
 function showHiddenForm(srcButton){
 	srcButton.hide();
 	$('.ap-hidden-form').slideOut();
@@ -29,5 +31,18 @@ $(document).ready(function() {
 		event.preventDefault();
 		$('.ap-hidden-form').slideDown();
 		$('#ap-add-comment-button').hide();
+	});
+	$(document).scroll(function(){
+		var dl = null;
+		var dli = -1;
+		$('div.box .ap-date-line-placer').each(function(index){
+			if($(this).offset().top<$(window).scrollTop()){
+				dl = $(this);
+				dli = index;
+				$(this).children('.ap-date-line').addClass('ap-fixed-date'); 
+			}else{
+				$(this).children('.ap-date-line').removeClass('ap-fixed-date'); 
+			}
+		});
 	});
 });
