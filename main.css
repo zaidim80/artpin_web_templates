@@ -448,6 +448,23 @@ a.ap-button:hover { background: #eee; }
 
 .ap-fixed-date { position: fixed; top: 0; z-index: 100; background: #fff; width: 942px; }
 
+.ap-topline { margin: -20px -10px -30px -10px; overflow: hidden; height: 175px; }
+.ap-topline .ap-home-link { background: url(i/top-logo.png) no-repeat; text-decoration: none; width: 160px; height: 70px; display: block; position: relative; margin: 15px 0 -20px 45px; float: left; z-index: 100; }
+.ap-topline ul.ap-top-menu { background: #000; height: 36px; color: #fff; margin: 0; display: block; padding: 0 0 0 460px; list-style: none; border-top: 38px solid #fff; }
+.ap-topline ul.ap-top-menu a { color: #fff; text-decoration: none; }
+.ap-topline ul.ap-top-menu a:hover { color: #fff; text-decoration: underline; }
+.ap-topline ul.ap-top-menu li { font: italic 22px/36px "PT Serif", serif; display: inline-block; margin: 0 50px 0 0; }
+
+.ap-topline a.ap-round { display: block; float: right; margin: -28px 0 0 0; background: #fff; border-radius: 50%; width: 20px; height: 20px; text-decoration: none; }
+.ap-topline a.ap-reglink { margin-right: 50px; }
+.ap-topline a.ap-addlink { margin-right: 20px; }
+
+.ap-topline .ap-searchbar { background: url(i/o75.png); height: 60px; position: relative; z-index: 5; clear: both; }
+.ap-topline a.ap-searchlink { color: #999; text-decoration: none; float: right; border-bottom: 1px dotted #ccc; font: italic 18px/14px "PT Serif", serif; margin: 20px 40px 0 0; }
+.ap-topline a.ap-searchlink:hover { color: #333; border-bottom: 1px dotted #666; }
+.ap-topline .ap-searching { display: none; color: #999; font: italic 18px "PT Serif", serif; text-align: center; }
+.ap-topline .ap-searching a.ap-close { display: block; float: right; width: 15px; height: 15px; background: url(i/close-search.png) no-repeat; text-decoration: none; margin: 20px 40px 0 0; }
+.ap-topline input#search_text { color: #333; font: bold 60px/60px "PT Sans", sans-serif; border: none; background: none; text-align: center; width: 500px; padding: 0; }
 
 .mr20 { margin-right: 20px; }
 .mb20 { margin-bottom: 20px; }

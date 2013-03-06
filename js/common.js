@@ -17,7 +17,7 @@ function popupPage(page_code){
 }
 
 $(document).ready(function() {
-	$('ul.tabs').delegate('li:not(.current)', 'click', function() {
+	$('ul.tabs').delegate('li:not(.current)', 'click', function(){
 		$(this).addClass('current').siblings().removeClass('current').parents('div.ap-tabs-wrapper').find('div.box').eq($(this).index()).fadeIn(150).siblings('div.box').hide();
 	});
 	$('.ap-slides').slides({
@@ -27,10 +27,26 @@ $(document).ready(function() {
 		generatePagination: false
 	});
 	$('.ap-hidden-form').slideUp();
-	$('#ap-add-comment-button').click(function(event) {
+	$('#ap-add-comment-button').click(function(event){
 		event.preventDefault();
 		$('.ap-hidden-form').slideDown();
 		$('#ap-add-comment-button').hide();
+	});
+	$('.ap-searchlink').click(function(event){
+		event.preventDefault();
+		$('.ap-searchbar').animate({'height':'100px'},500,function(){
+			$('.ap-searchlink').hide();
+			$('.ap-searching').fadeIn();
+			$('#search_text').focus();
+			$('#search_text').val('кино');
+		});
+	});
+	$('.ap-searching a.ap-close').click(function(event){
+		event.preventDefault();
+		$('.ap-searching').fadeOut(200);
+		$('.ap-searchbar').animate({'height':'60px'},500,function(){
+			$('.ap-searchlink').fadeIn();
+		});
 	});
 	$(document).scroll(function(){
 		var dl = null;
