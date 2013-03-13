@@ -20,6 +20,7 @@
 			<ul>
 				<li><a href="#" onclick="popupPage('places');">Список заведений</a></li>
 				<li><a href="#" onclick="popupPage('authors');">Список авторов</a></li>
+				<li><a href="#" onclick="popupPage('reg');">Регистрация</a></li>
 			</ul>
 		</div>
 	</div>
@@ -179,6 +180,48 @@
 			<li><a href="#">12</a></li>
 			<li><a href="#">&gt;</a></li>
 		</ul>
+	</div>
+</div>
+<div id="ap-hidden-reg" style="display:none">
+	<div class="ap-reg-popup">
+		<table class="ap-profile-table">
+			<tr>
+				<td width="30%" class="ap-caption">Имя: &nbsp;</td>
+				<td width="70%"><input type="text" name="txt" value="Александр" class="ap-input" /></td>
+			</tr>
+			<tr>
+				<td class="ap-caption">Фамилия: &nbsp;</td>
+				<td><input type="text" name="txt" value="Македонский" class="ap-input" /></td>
+			</tr>
+			<tr>
+				<td class="ap-hint" colspan="2"><span>* настоящия имя и фамилия нужны в целях антиконспирации</span></td>
+			</tr>
+			<tr>
+				<td class="ap-caption">Пол: &nbsp;</td>
+				<td><input type="radio" name="sex" value="мэ" class="ap-input-radio" checked="checked" id="sex_m" /> <label for="sex_m">м</label> &nbsp;
+				<input type="radio" name="sex" value="жо" class="ap-input-radio" id="sex_f" /> <label for="sex_f">ж</label></td>
+			</tr>
+			<tr>
+				<td class="ap-caption">Почта: &nbsp;</td>
+				<td><input type="text" name="txt" value="mac@world.gov" class="ap-input ap-error" /><span class="ap-error-hint">какие-то претензии</span></td>
+			</tr>
+			<tr>
+				<td class="ap-caption">О себе: &nbsp;</td>
+				<td><textarea></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="checkbox" id="user-agreement-check" name="user-agreement-check" /> <label for="user-agreement-check">я согласен с условиями <a href="#" id="agreement-link">Пользовательского соглашения</a></label>
+				<div class="ap-user-agreement">
+					<p><strong>Одним из наиболее</strong></p>
+					<p>Одним из наиболее важных уроков, который мы можем извлечь из закона Фиттса является, что несмотря на то, что легче всего щёлкнуть по самой большой кнопке, это не обязательно будет самая важная кнопка. Именно из-за этого заблуждения во множестве интерфейсов пользователей кнопки</p>
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"><a href="#" class="ap-submit-button">Регистрация</a></td>
+			</tr>
+		</table>
+		
 	</div>
 </div>
 </body>

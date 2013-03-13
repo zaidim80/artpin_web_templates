@@ -466,6 +466,12 @@ a.ap-button:hover { background: #eee; }
 .ap-topline .ap-searching a.ap-close { display: block; float: right; width: 15px; height: 15px; background: url(i/close-search.png) no-repeat; text-decoration: none; margin: 20px 40px 0 0; }
 .ap-topline input#search_text { color: #333; font: bold 60px/60px "PT Sans", sans-serif; border: none; background: none; text-align: center; width: 500px; padding: 0; }
 
+.ap-popup-page .ap-reg-popup { width: 400px; }
+.ap-popup-page .ap-reg-popup .ap-profile-table { width: 400px; margin: 0; }
+.ap-profile-table .ap-hint span { display: block; color: #999; padding-left: 40px; }
+.ap-profile-table input.ap-error { border-color: #f39; }
+.ap-profile-table span.ap-error-hint { color: #f39; display: block; }
+
 .mr20 { margin-right: 20px; }
 .mb20 { margin-bottom: 20px; }
 .mr10 { margin-right: 7px; }

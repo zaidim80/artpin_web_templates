@@ -6,7 +6,7 @@ function showHiddenForm(srcButton){
 }
 
 function popupPage(page_code){
-	e = $('<div class="ap-popup-page">');
+	e = $('<div class="ap-popup-page ap-popup-page-'+page_code+'">');
 	e.html('<a class="ap-close-popup" href="#">&nbsp;</a>'+$('#ap-hidden-'+page_code).html());
 	e.lightbox_me({
 		centered: true,
