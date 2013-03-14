@@ -8,12 +8,28 @@ function showHiddenForm(srcButton){
 function popupPage(page_code){
 	e = $('<div class="ap-popup-page ap-popup-page-'+page_code+'">');
 	e.html('<a class="ap-close-popup" href="#">&nbsp;</a>'+$('#ap-hidden-'+page_code).html());
-	e.lightbox_me({
-		centered: true,
-		zIndex: 100000,
-		destroyOnClose: true,
-		closeSelector: '.ap-close-popup'
-	});
+	switch(page_code){
+		case 'reg':
+			e.lightbox_me({
+				centered: true,
+				zIndex: 100000,
+				destroyOnClose: true,
+				onLoad: function(){
+					$('.ap-popup-page #agreement-link').click(function(){
+						$('.ap-popup-page .ap-user-agreement').slideToggle();
+					});
+				},
+				closeSelector: '.ap-close-popup'
+			});
+			break;
+		default:
+			e.lightbox_me({
+				centered: true,
+				zIndex: 100000,
+				destroyOnClose: true,
+				closeSelector: '.ap-close-popup'
+			});
+	}
 }
 
 $(document).ready(function() {

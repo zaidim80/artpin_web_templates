@@ -472,6 +472,10 @@ a.ap-button:hover { background: #eee; }
 .ap-profile-table input.ap-error { border-color: #f39; }
 .ap-profile-table span.ap-error-hint { color: #f39; display: block; }
 
+.ap-user-agreement { overflow-y: scroll; height: 200px; border: 1px solid #ccc; margin: 10px 0 0 0; padding: 0 10px; text-align: left; }
+.ap-agreement-cell { text-align: center; }
+.ap-agreement-cell a { color: #3cf; }
+
 .mr20 { margin-right: 20px; }
 .mb20 { margin-bottom: 20px; }
 .mr10 { margin-right: 7px; }
